@@ -20,8 +20,8 @@ const Home = () =>{
                 <ScreenHeaderBtn iconUrl={icons.menu} dimension ="60%"/>
             ),
 
-            headerRightt: () =>(
-                <ScreenHeaderBtn iconUrl={icons.profile} dimension ="100%"/>
+            headerRight: () =>(
+                <ScreenHeaderBtn iconUrl={images.profile} dimension ="100%"/>
             ),
             headerTitle: ""
            }}
@@ -36,6 +36,8 @@ const Home = () =>{
              }}>
 
                 <Welcome/>
+                <Popularjobs/>
+                <Nearbyjobs/>
              </View>
 
            </Scrollview>
