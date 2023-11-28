@@ -11,6 +11,8 @@ import styles from './welcome.style'
 const jobTypes =["Full-Time", "Part-Time","Contractor"];
 const  Welcome = () => {
   const router = useRouter();
+  const [activeJobType, setActiveJobeType]= useState('Full-Time')
+
 
   return (
     <View>
@@ -44,7 +46,15 @@ const  Welcome = () => {
           data={jobTypes}
           renderItem={({item}) =>(
             <TouchableOpacity>
-
+                <Text 
+                style ={styles.tab(activeJobType, item)}
+                  onPress={()=>{
+                    setActiveJobeType(item);
+                    router.push(`/search/${item}`)
+                  }}
+                >
+                  {item}
+                </Text>
               
             </TouchableOpacity>
           )
