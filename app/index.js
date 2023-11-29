@@ -1,6 +1,5 @@
-import { View, Text} from 'react-native';
-import { View , Scrollview, SafeAreaView } from 'react-native';
-import { Stack useRouter } from 'expo-router';
+import { View , Text, Scrollview, SafeAreaView } from 'react-native';
+import { Stack , useRouter } from 'expo-router';
 import { COLORS, icons,images,SIZES } from '../constants';
 import { Nearbyjobs, Popularjobs, ScreenHeaderBtn,Welcome} from '../components';
 import React from 'react';
