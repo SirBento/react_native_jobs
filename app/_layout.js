@@ -5,10 +5,10 @@ import * as SplashScreen from 'expo-splash-screen'
 
 SplashScreen.preventAutoHideAsync();
 
-export const unstable_settings = {
+/**export const unstable_settings = {
     // Ensure any route can link back to `/`
     initialRouteName: "home",
-  };
+  };*/
 
 const Layout = () => {
     const [fontsLoaded] = useFonts({
@@ -16,10 +16,10 @@ const Layout = () => {
       DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
       DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
     });
-
+ 
     const onLayoutRootView = useCallback(async()=>{
         if (fontsLoaded){
-            await SplashScreen.hideAsync
+            await SplashScreen.hideAsync();
         }
 
     },[fontsLoaded])
